@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ticketing-netsuite:
+    build: .
+    container_name: ticketing-netsuite
+    restart: unless-stopped
+    ports:
+      - "7000:7000"
