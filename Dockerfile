@@ -8,7 +8,8 @@ WORKDIR /app
 RUN npm install -g serve
 
 # Copy the build output (dist folder) into the container
-COPY ./dist /app/dist
+#COPY ./dist /app/dist
+COPY . /app/
 
 # Expose port 7000 for serve
 EXPOSE 7000
